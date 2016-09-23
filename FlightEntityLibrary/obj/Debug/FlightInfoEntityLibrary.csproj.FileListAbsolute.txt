@@ -1,0 +1,4 @@
+D:\FlightInformationSystem\FlightInformationSystem\FlightEntityLibrary\bin\Debug\FlightEntityLibrary.dll
+D:\FlightInformationSystem\FlightInformationSystem\FlightEntityLibrary\bin\Debug\FlightEntityLibrary.pdb
+D:\FlightInformationSystem\FlightInformationSystem\FlightEntityLibrary\obj\Debug\FlightEntityLibrary.dll
+D:\FlightInformationSystem\FlightInformationSystem\FlightEntityLibrary\obj\Debug\FlightEntityLibrary.pdb

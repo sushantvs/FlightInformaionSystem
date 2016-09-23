@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoEntityLibrary", "FlightEntityLibrary\FlightInfoEntityLibrary.csproj", "{41F14122-30FC-48C2-9F5B-17951B8F2165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoExceptionLibrary", "FlightInfoExceptionLibrary\FlightInfoExceptionLibrary.csproj", "{82EC535E-8FB5-46D2-8ADA-9670CE3CF566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoDataAccessLibrary", "FlightInfoDataAccessLibrary\FlightInfoDataAccessLibrary.csproj", "{5BEB45AD-57F4-400D-B794-C1F869F89A2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoBusinessLibrary", "FlightInfoBusinessLibrary\FlightInfoBusinessLibrary.csproj", "{95C962B0-8DE1-4448-816D-82C07B7AADE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoWCFService", "FlightInfoWCFService\FlightInfoWCFService.csproj", "{652CC644-AE2E-4D64-8B7F-ED103F02C386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoClient", "FlightInfoClient\FlightInfoClient.csproj", "{55FEBA3D-5A93-4729-B047-D4F886616EAF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{652CC644-AE2E-4D64-8B7F-ED103F02C386} = {652CC644-AE2E-4D64-8B7F-ED103F02C386}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F14122-30FC-48C2-9F5B-17951B8F2165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F14122-30FC-48C2-9F5B-17951B8F2165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F14122-30FC-48C2-9F5B-17951B8F2165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F14122-30FC-48C2-9F5B-17951B8F2165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EC535E-8FB5-46D2-8ADA-9670CE3CF566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EC535E-8FB5-46D2-8ADA-9670CE3CF566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EC535E-8FB5-46D2-8ADA-9670CE3CF566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EC535E-8FB5-46D2-8ADA-9670CE3CF566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BEB45AD-57F4-400D-B794-C1F869F89A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BEB45AD-57F4-400D-B794-C1F869F89A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BEB45AD-57F4-400D-B794-C1F869F89A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BEB45AD-57F4-400D-B794-C1F869F89A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C962B0-8DE1-4448-816D-82C07B7AADE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C962B0-8DE1-4448-816D-82C07B7AADE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C962B0-8DE1-4448-816D-82C07B7AADE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C962B0-8DE1-4448-816D-82C07B7AADE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652CC644-AE2E-4D64-8B7F-ED103F02C386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652CC644-AE2E-4D64-8B7F-ED103F02C386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652CC644-AE2E-4D64-8B7F-ED103F02C386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652CC644-AE2E-4D64-8B7F-ED103F02C386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FEBA3D-5A93-4729-B047-D4F886616EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FEBA3D-5A93-4729-B047-D4F886616EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FEBA3D-5A93-4729-B047-D4F886616EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FEBA3D-5A93-4729-B047-D4F886616EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
