@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FlightInfoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51884/FlightInfoService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51884/FlightInfoService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FlightInfoWCFService" />
+      <xsd:import schemaLocation="http://localhost:51884/FlightInfoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51884/FlightInfoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FlightInfoEntityLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFlightInfoService_getFlightInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFlightInformation" />
+  </wsdl:message>
+  <wsdl:message name="IFlightInfoService_getFlightInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFlightInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFlightInfoService_getFlightInformation_FlightInfoServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/FlightInfoWCFService" name="detail" element="q1:FlightInfoServiceException" />
+  </wsdl:message>
+  <wsdl:message name="IFlightInfoService_getFlightDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFlightDetails" />
+  </wsdl:message>
+  <wsdl:message name="IFlightInfoService_getFlightDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFlightDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFlightInfoService_getFlightDetails_FlightInfoServiceExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/FlightInfoWCFService" name="detail" element="q2:FlightInfoServiceException" />
+  </wsdl:message>
+  <wsdl:portType name="IFlightInfoService">
+    <wsdl:operation name="getFlightInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFlightInfoService/getFlightInformation" message="tns:IFlightInfoService_getFlightInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFlightInfoService/getFlightInformationResponse" message="tns:IFlightInfoService_getFlightInformation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IFlightInfoService/getFlightInformationFlightInfoServiceExceptionFault" name="FlightInfoServiceExceptionFault" message="tns:IFlightInfoService_getFlightInformation_FlightInfoServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFlightDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFlightInfoService/getFlightDetails" message="tns:IFlightInfoService_getFlightDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFlightInfoService/getFlightDetailsResponse" message="tns:IFlightInfoService_getFlightDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IFlightInfoService/getFlightDetailsFlightInfoServiceExceptionFault" name="FlightInfoServiceExceptionFault" message="tns:IFlightInfoService_getFlightDetails_FlightInfoServiceExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFlightInfoService" type="tns:IFlightInfoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getFlightInformation">
+      <soap:operation soapAction="http://tempuri.org/IFlightInfoService/getFlightInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlightInfoServiceExceptionFault">
+        <soap:fault use="literal" name="FlightInfoServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFlightDetails">
+      <soap:operation soapAction="http://tempuri.org/IFlightInfoService/getFlightDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlightInfoServiceExceptionFault">
+        <soap:fault use="literal" name="FlightInfoServiceExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FlightInfoService">
+    <wsdl:port name="BasicHttpBinding_IFlightInfoService" binding="tns:BasicHttpBinding_IFlightInfoService">
+      <soap:address location="http://localhost:51884/FlightInfoService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
