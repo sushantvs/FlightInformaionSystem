@@ -1,4 +1,4 @@
-## FlightInformaionSystem
+## Flight Information System
 ASP.NET Application implementing WCF client.
 
 ##Software Requirements to Run the Solution
