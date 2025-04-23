@@ -1,7 +1,7 @@
-## Flight Information System
+# Flight Information System
 ASP.NET Application implementing WCF client.
 
-##Software Requirements to Run the Solution
+## Software Requirements to Run the Solution
 
 1.This solution was implemented on Microsoft Visual Studio 2015 Community Version.
 
@@ -10,7 +10,7 @@ ASP.NET Application implementing WCF client.
 3.Browser
 
 
-##Steps for executing(running) the solution
+## Steps for executing(running) the solution
 
 1.Run the SQL script.
 
