@@ -1,5 +1,8 @@
 # Flight Information System
-ASP.NET Application implementing WCF client.
+![ASP.NET](https://img.shields.io/badge/ASP.NET-WCF-blue)
+
+
+An ASP.NET Application implementing WCF client.
 
 ### Software Requirements to Run the Solution
 
