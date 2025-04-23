@@ -1,33 +1,34 @@
 # Flight Information System
 ![ASP.NET](https://img.shields.io/badge/ASP.NET-WCF-blue)
+![Visual_Studio_2015](https://img.shields.io/badge/Visual_Studio-2015-blue)
 
 
 An ASP.NET Application implementing WCF client.
 
 ### Software Requirements to Run the Solution
 
-1.This solution was implemented on Microsoft Visual Studio 2015 Community Version.
+1. This solution was implemented on Microsoft Visual Studio 2015 Community Version.
 
-2.SQL Server Management Studio (2008 version)
+2. SQL Server Management Studio (2008 version)
 
-3.Browser
+3. Browser
 
 
 ### Steps for executing(running) the solution
 
-1.Run the SQL script.
+1. Run the SQL script.
 
-2.Load(Double click) the solution file 'FlightInformationSystem.sln'.
+2. Load(Double click) the solution file 'FlightInformationSystem.sln'.
 
-3.Make sure all the packages are loaded by MS Visual Studio.
+3. Make sure all the packages are loaded by MS Visual Studio.
 
-4.Set 'FlightInfoClient' as Start up project.
+4. Set 'FlightInfoClient' as Start up project.
 
-5.Build the solution.
+5. Build the solution.
 
-6.Update the Service Refrence.
+6. Update the Service Refrence.
 
-7.Press 'Ctrl+F5' or Run icon in the IDE.
+7. Press 'Ctrl+F5' or Run icon in the IDE.
 
-8.Browser will be launched.
+8. Browser will be launched.
 
