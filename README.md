@@ -1,6 +1,6 @@
 # Flight Information System
 ![ASP.NET](https://img.shields.io/badge/ASP.NET-WCF-blue)
-![Visual_Studio_2015](https://img.shields.io/badge/Visual_Studio-2015-blue)
+![Visual_Studio_2015](https://img.shields.io/badge/Visual_Studio-2015-brightgreen)
 
 
 An ASP.NET Application implementing WCF client.
